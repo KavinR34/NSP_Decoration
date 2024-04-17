@@ -1,0 +1,333 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    {% load static %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--icons--><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!--Font-->
+    <!--top head font--><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel Decorative">
+    <!--navfont--><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <!--para font--><link rel="preconnect" href="https://fonts.googleapis.com">
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Great+Vibes&family=Merienda:wght@300..900&family=Oleo+Script:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+
+    <!--heading font--><link rel="preconnect" href="https://fonts.googleapis.com">
+                        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                        <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Courgette&family=Great+Vibes&family=Merienda:wght@300..900&family=Oleo+Script:wght@400;700&family=Pacifico&family=Righteous&family=Sriracha&display=swap" rel="stylesheet">
+
+    <style>
+        .parafont{
+                font-family: "Merienda";
+        }
+        .headfont{
+            font-family: "Pacifico";
+        } 
+        .navfont{
+            font-family: "Lobster";
+            font-size: large;
+        }
+        .heading{
+            text-align: center;
+            color: aliceblue;
+            font-family:"Cinzel Decorative",serif ;
+        }
+        
+        header{
+            background-image: url(static/back2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        
+        }
+        section{
+            background-image: url(static/back2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: 50px;
+        } 
+        
+        .h1{
+            color: aliceblue;
+            padding-left: 175px;
+        }
+        .box{
+            border: none ;
+            padding: 40px;
+            /*margin-top: 30px;*/
+            width: 100%;
+            height: 40%;
+        }
+        .box1{
+            border: solid white;
+            border-radius: 15px;
+            color: aliceblue;
+            padding: 20px;
+            float: right;
+            width: 950px;
+            height: 300px;
+            background-image: url(static/servies.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        .box2{
+            border: solid white;
+            border-radius: 15px;
+            color: aliceblue;
+            padding: 20px;
+            float: left;
+            width: 950px;
+            height: 300px;
+            background-image: url(static/servies.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        .boximg{
+           float: left;
+        }
+        .boximg1{
+           float: right;
+        }
+
+        /*button*/
+        button{
+            background-color: transparent;
+            color: aliceblue;
+            border: outset;
+            float: right;
+        }
+
+        /* footer */
+        .foot{
+            font-family:"Cinzel Decorative",serif ;
+        }
+        footer{
+            color: aliceblue;
+            background-color: black;
+            /*background-image: url(static/foot.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;*/
+            width: 100%;
+            height: 300px;
+            padding: 80px;
+        }
+    
+    </style>
+</head>
+
+<body>
+        <header>
+            <!-- NavigationBar-->
+
+            <nav class="navbar navbar-expand-sm" >
+                
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#" ><img src="{% static 'nsp.png' %}" alt="nsp" width="180px" height="70px"></a>    
+                    <ul class="navbar-nav navfont">
+                        <li class="nav-item"><a class="nav-link text-light" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="about">About</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="service">Service</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="gallary">Gallary</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="contact">Contact</a></li>
+                    </ul>
+                </div>
+                <a href="https://wa.me/9092137082/?text=Hello%20there!" target="_blank"><i class="fa fa-whatsapp text-light" style="font-size: 30px; padding-right: 10px;"></i></a>
+                <a href="https://www.instagram.com/nsp_decors_and_eventz?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa fa-instagram text-light" style="font-size: 30px;  padding-right: 10px;"></i></a>
+                <a href="https://www.facebook.com/nspdecors" target="_blank"><i class="fa fa-facebook text-light" style="font-size: 30px; padding-right: 15px;"></i></a>
+            </nav>
+
+            <!-- Title-->
+            <div class="heading">
+                <h1><strong>NSP Decorator</strong></h1>
+                <h2>Wedding & Event Planner</h2>
+            </div>
+
+            <h1 class="h1 headfont"><b>Service</b></h1>
+
+            <!--stage decoration-->
+            <div class="box">
+                <div class="boximg">
+                    <img src="{% static 'back6.jpg' %}" alt="stage" width="450px" height="300px" style="border-radius: 20px;">
+                </div>
+                
+                <div class="box1">
+                    <h3 style="text-align: center;" class="headfont"><b>Stage Decoration</b></h3> <br>
+                <p class="parafont">
+                    The backdrop is the central element of the stage decoration. It can be adorned with flowers, drapery, lighting, or other decorative elements to create a stunning focal point. 
+                    Consider using a combination of fabrics, lights, and props to enhance the visual appeal of the backdrop.Choose a theme and color scheme that reflects the style and preferences of the couple. 
+                    Whether it's traditional, modern, rustic, or glamorous, the theme and colors should set the tone for the entire wedding decor.
+                </p>
+                </div>
+            </div>
+
+            <!--manavari-->
+            <div class="box" style="margin-top: 50px;">
+                <div class="boximg1">
+                    <img src="{% static 'manavarai.jpg' %}" alt="stage" width="450px" height="300px" style="border-radius: 20px;">
+                </div>
+                
+                <div class="box2">
+                    <h3 style="text-align: center;" class="headfont"><b>Manavarai Decoration</b></h3> <br>
+                <p class="parafont">
+                    Manavarai decoration is a traditional and elaborate form of stage decoration commonly seen in South Indian weddings, particularly in Tamil Nadu. 
+                    The term "Manavarai" refers to the elevated platform or stage where the wedding ceremony takes place. Manavarai decoration plays a significant role 
+                    in enhancing the ambiance and aesthetics of the wedding venue, creating a visually stunning backdrop for the wedding rituals and festivities.
+                    Manavarai decoration can be personalized to reflect the preferences, tastes, and personalities of the bride and groom. Couples often choose specific colors, themes, 
+                    and design elements that hold special meaning to them, adding a personal touch to the decor.
+                </p>
+                <button>View More</button>
+                </div>
+            </div>
+        </header>
+    
+        <section>
+            <!--welcome decoration-->
+        <div class="box">
+            <div class="boximg">
+                <img src="{% static 'welcome1.jpg' %}" alt="stage" width="450px" height="300px" style="border-radius: 15px;">
+            </div>
+            
+            <div class="box1">
+                <h3 style="text-align: center;" class="headfont"><b>Welcome Decoration</b></h3> <br>
+            <p class="parafont">
+                Welcome decoration is an integral part of event planning, particularly in celebrations like weddings, receptions, parties, corporate events, and other special occasions.
+                 It sets the tone for the event and creates a welcoming ambiance for guests as they arrive. Welcome decorations are designed to make guests feel appreciated, comfortable,
+                  and excited about the event ahead.Welcome decorations should reflect the host's hospitality and appreciation for their guests. Personalize the decor with the couple's names, 
+                  monograms, or corporate logos to create a sense of connection and belonging. Consider offering refreshments, welcome drinks, or small tokens of appreciation to guests as they arrive.
+            </p>
+            </div>
+        </div>
+
+        <!--Pathway decoration-->
+        <div class="box" style="margin-top: 50px;">
+            <div class="boximg1">
+                <img src="{% static 'path.jpg' %}" alt="stage" width="450px" height="300px" style="border-radius: 20px;">
+            </div>
+            
+            <div class="box2">
+                <h3 style="text-align: center;" class="headfont"><b>Pathway Decoration</b></h3> <br>
+            <p class="parafont">
+                Wedding pathway decoration is an essential aspect of wedding decor as it sets the tone and ambiance for the event while guiding guests along the designated path.
+                Start by considering the theme and style of your wedding. Whether you're aiming for a rustic, romantic, vintage, modern, or traditional theme, your pathway decorations 
+                should reflect and complement the overall aesthetic. Lighting plays a crucial role in wedding pathway decoration, especially for evening or nighttime ceremonies. Illuminate 
+                the pathway with a variety of lighting options such as string lights, lanterns, candles, or LED pathway lights. Consider creating a soft, romantic glow with fairy lights 
+                wrapped around trees or suspended above the pathway.
+            </p>
+            <button>View More</button>
+            </div>
+        </div>
+
+        </section>
+        
+        <section>
+            <!--BabyShower decoration-->
+        <div class="box">
+            <div class="boximg">
+                <img src="{% static 'babyshower.jpg' %}" alt="stage" width="450px" height="300px" style="border-radius: 15px;">
+            </div>
+            
+            <div class="box1">
+                <h3 style="text-align: center;" class="headfont"><b>BabyShower Decoration</b></h3> <br>
+            <p class="parafont">
+                Welcome decoration is an integral part of event planning, particularly in celebrations like weddings, receptions, parties, corporate events, and other special occasions.
+                 It sets the tone for the event and creates a welcoming ambiance for guests as they arrive. Welcome decorations are designed to make guests feel appreciated, comfortable,
+                  and excited about the event ahead.Welcome decorations should reflect the host's hospitality and appreciation for their guests. Personalize the decor with the couple's names, 
+                  monograms, or corporate logos to create a sense of connection and belonging. Consider offering refreshments, welcome drinks, or small tokens of appreciation to guests as they arrive.
+            </p>
+            </div>
+        </div>
+
+            <!--Birthday&Balloon decoration-->
+
+        <div class="box" style="margin-top: 50px;">
+            <div class="boximg1">
+                <img src="{% static 'birthday.jpg' %}" alt="stage" width="450px" height="300px" style="border-radius: 20px;">
+            </div>
+            
+            <div class="box2">
+                <h3 style="text-align: center;" class="headfont"><b>Birthday&Balloon Decoration</b></h3> <br>
+            <p class="parafont">
+                Birthday decoration plays a significant role in creating a festive and memorable atmosphere for celebrating someone's special day. Whether it's a child's birthday, a 
+                milestone birthday, or an adult's birthday party, decorations add flair, excitement, and personality to the event.Set up a backdrop or photo booth area where guests 
+                can take photos to capture memories of the birthday celebration. Use themed backdrops, banners, balloons, and props to create a fun and Instagram-worthy photo opportunity. 
+                Balloons are a staple of birthday decoration and add instant fun and festivity to any party. Use a mix of helium-filled balloons, balloon bouquets, balloon arches, and balloon garlands 
+                in coordinating colors to decorate the party space. Foil balloons in shapes such as numbers, letters, or themed characters can also be used to personalize the decor.
+            </p>
+            <button>View More</button>
+            </div>
+        </div>
+
+        </section>
+
+        <section>
+            <!--OpeningCeremony decoration-->
+        <div class="box">
+            <div class="boximg">
+                <img src="{% static 'open.jpg' %}" alt="stage" width="450px" height="300px" style="border-radius: 15px;">
+            </div>
+            
+            <div class="box1">
+                <h3 style="text-align: center;" class="headfont"><b>OpeningCeremony Decoration</b></h3> <br>
+            <p class="parafont">
+                Opening ceremony decoration sets the tone for an event or establishment's grand opening, whether it's a new business, a venue, a conference, or a special occasion. 
+                The decor should be visually appealing, welcoming, and reflective of the purpose and significance of the event.Select a color scheme that complements the theme and branding 
+                of the event. Consider using colors that evoke the desired mood or atmosphere, such as bold and vibrant hues for a lively celebration or elegant and sophisticated tones for a formal event.
+                Create interactive installations or photo opportunities that engage guests and encourage social sharing. This could include selfie stations, interactive displays, or immersive experiences 
+                that showcase the brand or theme of the event.
+            </p>
+            </div>
+        </div>
+        </section>
+        
+         <!--Footer-->
+    
+         <footer class="ter">
+            
+            <div class="col-sm-3 foot" style="float: left;">
+                <h4><strong>NSP Decorator</strong></h4>
+                <h5>Wedding & Event Planner</h5>
+                <div>
+                    <a href="https://wa.me/9092137082/?text=Hello%20there!" target="_blank"><i class="fa fa-whatsapp text-light" style="font-size: 30px; padding-right: 10px;"></i></a>
+                    <a href="https://www.instagram.com/nsp_decors_and_eventz?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fa fa-instagram text-light" style="font-size: 30px; padding-right: 10px;"></i></a>
+                    <a href="https://www.facebook.com/nspdecors" target="_blank"><i class="fa fa-facebook text-light" style="font-size: 30px;"></i></a>
+                </div>
+            
+            </div>
+            <div class="col-sm-3" style="float: left;">
+                <h6 class="headfont"><b>Contact</b></h6>
+                <ul style="list-style-type: none;" class="parafont">
+
+                    <li>Phone: 9750693405</li>
+                    <li>Email: nspdecor@gmail.com</li>
+                    <li>11/10 Uppliyer Thittu Street,</li>
+                    <li>Kurichi,Sundarapuram,</li>
+                    <li>Coimbatore,Tamilnadu,641024.</li>
+                </ul>
+                <!-- <img src="{% static 'nsp.png'%}" alt="nsp" width="300px"> -->
+            </div>
+        
+        <div class="col-sm-3" style="float: left;">
+            <h6 class="headfont"><b>More information</b></h6>
+            <ul style="list-style-type: none;" class="navfont">
+                <li>Home</li>
+                <li>About</li>
+                <li>Service</li>
+                <li>Gallary</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="col-sm-3" style="float: left;">
+            <h6 class="headfont"><b>Navigation</b></h6>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1958.5046256588034!2d76.96956995575434!3d10.962673329824451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85a2e9e8dfdb3%3A0xe2bc66f7e4f3080e!2sNSP%20DECORS%26EVENTZ!5e0!3m2!1sen!2sin!4v1711965073601!5m2!1sen!2sin" 
+            width="300" height="160" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+       
+    </footer>
+</body>
+
+</html>

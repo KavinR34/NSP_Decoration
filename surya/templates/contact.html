@@ -1,0 +1,180 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--icons--><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Font-->
+    <!--top head font--><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel Decorative">
+     <!--nav font--><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    
+    <!--heading font--><link rel="preconnect" href="https://fonts.googleapis.com">
+                        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                        <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Courgette&family=Great+Vibes&family=Merienda:wght@300..900&family=Oleo+Script:wght@400;700&family=Pacifico&family=Righteous&family=Sriracha&display=swap" rel="stylesheet">
+
+    <!--para font--><link rel="preconnect" href="https://fonts.googleapis.com">
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Great+Vibes&family=Merienda:wght@300..900&family=Oleo+Script:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+
+    <style>
+        .parafont{
+                font-family: "Merienda";
+        }
+        .headfont{
+            font-family: "Pacifico";
+        } 
+        .navfont{
+            font-family: "Lobster";
+            font-size: large;
+        }
+        .headborder{
+            border-left:solid 10px#C13584;
+            border-radius: 10px;
+            background-color: #f57dc1;
+            width: 50%;
+            padding: 10px;
+            margin: auto;
+            text-align: center;
+       }
+        body{
+            /*background-image: url(static/contact.png); */
+            background-color: none;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        header{
+            background-color: #f57dc1;
+            height: 100px;
+        }
+        .heading{
+            text-align: center;
+            /*color: aliceblue;*/
+            font-family:"Cinzel Decorative",serif;
+        }
+       
+        /*label{
+            color: aliceblue;
+        } */
+        input,textarea{
+            /*color: aliceblue; */
+            background-color:transparent;
+            border: 3px; 
+            border-radius: 10px; 
+            width: 70%; 
+            border-style: inset; 
+            border-color: #C13584;
+            font-family: Merienda;
+        }
+        label{
+            padding-left: 10px;
+            font-size: larger;
+            font-family: Merienda;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+         <!-- NavigationBar-->
+    <nav class="navbar navbar-expand-sm" >
+        
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" ><img src="{% static 'nsp.png' %}" alt="nsp" width="180px" height="70px"></a>    
+         
+            <ul class="navbar-nav navfont">
+                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="service">Service</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallary">Gallary</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact">Contact</a></li>
+            </ul>
+        </div>
+        <a href="https://wa.me/9750693405/?text=Hello%20there!" target="_blank"><i class="fa fa-whatsapp" style="font-size: 30px; padding-right: 10px; color: 25D366;"></i></a>
+        <a href="https://www.instagram.com/nsp_decors_and_eventz?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fa fa-instagram" style="font-size: 30px; padding-right: 10px; color: #C13584;"></i></a>
+        <a href="https://www.facebook.com/nspdecors" target="_blank"><i class="fa fa-facebook " style="font-size: 30px; padding-right: 15px;"></i></a>
+    </nav>
+
+     <!--Heading--> <!--
+    <div class="heading">
+        <h1><strong>NSP Decorator</strong></h1>
+        <h2>Wedding & Event Planner</h2>
+    </div>-->
+    </header>
+<br>
+    <section>
+    <div class="container-fluid" style="padding-left: 80px;">
+        <div class="col-sm-6" style="float: left;">
+            <h2 class="headfont"><b>Contact Us</b></h2>
+            <p class="parafont">
+                Let's connect and discover what we can create together. With our passion for decor and attention 
+                to details,there's nothing but unforgettable memories ahead.We can't wait to hear from you!. 
+            </p>
+            <br>
+            <div class="heading headborder">
+                <h4><strong>NSP Decorator</strong></h4>
+            <h5><b>Wedding & Event Planner</b></h5>
+            </div>
+            <h5 class="headfont"><b>Contact</b></h5>
+            <ul style="list-style-type: none;" class="parafont">
+                <li>N.Suryaprakash</li>
+                <li>Phone: 9750693405</li>
+                <li>Email: nspdecor@gmail.com</li>
+                
+            </ul>
+
+            <h5 class="headfont"><b>Location</b></h5>
+            <ul style="list-style-type: none;" class="parafont">
+                <li>11/10 Uppliyer Thittu Street,</li>
+                <li>Kurichi,Sundarapuram,</li>
+                <li>Coimbatore,Tamilnadu,641024.</li>
+            </ul>
+            
+            <h5 class="headfont"><b>Social Media</b></h5>
+            <div style="padding-left: 50px;">
+                <a href="https://wa.me/9750693405/?text=Hello%20there!" target="_blank"><i class="fa fa-whatsapp" style="font-size: 30px; padding-right: 10px; color: 25D366;"></i></a>
+                <a href="https://www.instagram.com/nsp_decors_and_eventz?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fa fa-instagram" style="font-size: 30px; padding-right: 10px; color: #C13584;"></i></a>
+                <a href="https://www.facebook.com/nspdecors" target="_blank"><i class="fa fa-facebook " style="font-size: 30px;"></i></a>
+            </div>
+
+            <h5 class="headfont"><b>Navigation</b></h5>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1958.5046256588034!2d76.96956995575434!3d10.962673329824451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85a2e9e8dfdb3%3A0xe2bc66f7e4f3080e!2sNSP%20DECORS%26EVENTZ!5e0!3m2!1sen!2sin!4v1711965073601!5m2!1sen!2sin" 
+                width="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+            <!--Form-->
+        <div class="col-sm-6" style="float: left; align-content: center;">
+            <form action="addData" method="POST" autocomplete="off">
+                {% csrf_token %}
+                <h3 style="text-align: center;" class="headfont">Enquiry Form</h3> <br>
+                <label for=""><b>Name</b></label> <br>
+                <input type="text" name="name">
+                <br><br>
+                <label for=""><b>Phone</b></label> <br>
+                <input type="tel" name="phone" pattern="[0-9]{10}">
+                <br><br>
+                <label for=""><b>Email</b></label> <br>
+                <input type="email" name="email" id="">
+                <br><br>
+                <label for=""><b>Event Date</b></label> <br>
+                <input type="date" name="eventdate">
+                <br><br>
+                <label for=""><b>Venue</b></label> <br>
+                <input type="text" name="venue" id="">
+                <br><br>
+                <label for=""><b>Type of Event</b></label> <br>
+                <input type="text" name="typeofevent">
+                <br><br>
+                <label for=""><b>Messege</b></label> <br>
+                <textarea name="messege" id="comment" cols="30" rows="3"></textarea>
+                <br><br>
+                <input type="submit" style="background-color: #C13584; color: white; width: 200px; align-self: center; font-size: large;">
+        
+            </form>
+        </div>
+        </section>
+    </div>
+
+</body>
+</html>

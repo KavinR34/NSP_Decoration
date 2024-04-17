@@ -1,0 +1,217 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--icons--><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Font--> 
+    <!--top head font--><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel Decorative ">
+    <!--nav font--><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    
+    <!--heading font--><link rel="preconnect" href="https://fonts.googleapis.com">
+                        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                        <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Courgette&family=Great+Vibes&family=Merienda:wght@300..900&family=Oleo+Script:wght@400;700&family=Pacifico&family=Righteous&family=Sriracha&display=swap" rel="stylesheet">
+    
+    <!--para font--><link rel="preconnect" href="https://fonts.googleapis.com">
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Great+Vibes&family=Merienda:wght@300..900&family=Oleo+Script:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+   
+    <style>
+          .parafont{
+            font-family: "Merienda";
+        }
+        .headfont{
+            font-family: "Pacifico";
+        } 
+        .navfont{
+            font-family: "Lobster";
+            font-size: large;
+        }
+        header{
+            background-image: url(static/servies.jpg);
+            background-repeat: no-repeat;
+            background-size: cover  ;
+            width: 100%;
+            
+        }
+        section{
+            background-image: url(static/servies.jpg);
+            background-repeat: no-repeat;
+            background-size: cover  ;
+            width: 100% ;
+            
+        }
+        .heading{
+            text-align: center;
+            color: aliceblue;
+            font-family:"Cinzel Decorative",serif ;
+        }
+        .cont{
+            color: aliceblue;
+            text-align: center;
+            padding: 80px;
+        }
+        .slide{
+            border: transparent;
+            padding: 60px;
+        }
+        .foot{
+            font-family:"Cinzel Decorative",serif ;
+        }
+        footer{
+            color: aliceblue;
+            background-color: black;
+            /*background-image: url(static/foot.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;*/
+            width: 100%;
+            height: 250px;
+            padding: 50px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+            <!-- NavigationBar-->
+
+        <nav class="navbar navbar-expand-sm" >
+            
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" ><img src="{% static 'nsp.png' %}" alt="nsp" width="180px" height="70px"></a>    
+                <ul class="navbar-nav navfont">
+                    <li class="nav-item"><a class="nav-link text-light" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="about">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="service">Service</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="gallary">Gallary</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="contact">Contact</a></li>
+                </ul>
+            </div>
+            <!-- <a class="navbar-brand" href="#"><img src="{% static 'insta5.png' %}" alt="insta" width="100px" height="70px"  ></a> -->
+            <a href="https://wa.me/9092137082/?text=Hello%20there!" target="_blank"><i class="fa fa-whatsapp text-light" style="font-size: 30px; padding-right: 10px;"></i></a>
+            <a href="https://www.instagram.com/nsp_decors_and_eventz?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa fa-instagram text-light" style="font-size: 30px;  padding-right: 10px;"></i></a>
+            <a href="https://www.facebook.com/nspdecors" target="_blank"><i class="fa fa-facebook text-light" style="font-size: 30px; padding-right: 15px;"></i></a>
+        </nav>
+
+        <!--Heading-->
+        <div class="heading">
+            <h1><strong>NSP Decorator</strong></h1>
+            <h2>Wedding & Event Planner</h2>
+        </div>
+
+        <div class="cont">
+            <h2 class="headfont"><strong>About Us</strong></h2>
+            <img src="{% static 'side2.jpg'%}" alt="side" width="250px" style="float: right;">
+            <div style="text-align: left;">
+                <!-- <img src="{% static 'welcome.jpg'%}" alt="welcome" style="float: left; width: 200px;"> -->
+                
+                <p class="parafont">
+                    Welcome to Our Wedding Website. We are thrilled to welcome you to our wedding website, a digital space where love, laughter, and cherished memories reside. As we eagerly anticipate our special day, we invite you to embark on this journey with us to witness the blossoming of our love story and the joyous moments that lie ahead.
+                    Within these virtual walls, you'll find a treasure trove of information about our love journey, from how we met to the adventures we've shared. Explore our story, discover the details of our upcoming celebration, and feel the excitement building as we countdown to our wedding day.
+                    This website is more than just a collection of details; it's a reflection of the love and gratitude we feel for each and every one of you. Whether you're a longtime friend, a cherished family member, or a new addition to our lives, we are deeply grateful for your presence in our lives and your support as we take this next step together.
+                    So, make yourself at home, browse through our pages, and join us in celebrating the magic of love. We're honored to have you here, and we can't wait to share this incredible journey with you.
+                </p>
+                <p class="parafont">
+                    No wedding feels truly complete without wedding decorations. However simple they may be, your decorations can turn a special event into the magical, 
+                    once-in-a-lifetime celebration that you've always dreamed of. Now, wedding decorations don't come easy, they requires a lot of thought and deliberate preparation. 
+                    So before you go out there and scout your wedding decorations, equip yourself with some basic decor knowledge.
+                    First things first, what should you decorate? You don't really have to decorate every single nook and cranny to make a huge impact, as long as you focus on these basic wedding decoration elements.
+                </p>
+            </div>
+            <div>
+                <h3 class="headfont"><strong>What to expect from your planner</strong></h3>
+                <p class="parafont">
+                    We are a Wedding Planning company that emphasis with our clients. We only take a limited number of events each year to ensure we can give our clients the attention they deserve. 
+                    We believe that each wedding is unique, and by getting to know our clients personal we can ensure their event is a true reflection of them. 
+                </p>
+            </div>
+        </div>
+        
+    </header>
+     
+    
+    
+    <section>
+
+        
+    </section>
+
+    <section>
+        <!-- Slide images--> 
+        <div id="demo" class="slide" data-bs-ride="carousel">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{% static 'stage3.jpg' %}" alt="Los Angeles" class="d-block" style="width: 100%; height: 700px;">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'manavarai.jpg' %}" alt="Chicago" class="d-block" style="width: 100%; height: 700px;">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'stage4.jpg' %}" alt="New York" class="d-block" style="width: 100%; height: 700px;">
+                </div>
+            </div>
+        
+           <!-- <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button> -->
+            
+        </div>
+    </section> 
+    
+    <!--Footer-->
+    
+        <footer class="ter">
+            
+                <div class="col-sm-3 foot" style="float: left;">
+                    <h4><strong>NSP Decorator</strong></h4>
+                    <h5>Wedding & Event Planner</h5>
+                    <div>
+                        <a href="https://wa.me/9092137082/?text=Hello%20there!" target="_blank"><i class="fa fa-whatsapp text-light" style="font-size: 30px; padding-right: 10px;"></i></a>
+                        <a href="https://www.instagram.com/nsp_decors_and_eventz?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fa fa-instagram text-light" style="font-size: 30px; padding-right: 10px;"></i></a>
+                        <a href="https://www.facebook.com/nspdecors" target="_blank"><i class="fa fa-facebook text-light" style="font-size: 30px;"></i></a>
+                    </div>
+                
+                </div>
+                <div class="col-sm-3" style="float: left;">
+                    <h6 class="headfont"><b>Contact</b></h6>
+                    <ul style="list-style-type: none;" class="parafont">
+
+                        <li>Phone: 9750693405</li>
+                        <li>Email: nspdecor@gmail.com</li>
+                        <li>11/10 Uppliyer Thittu Street,</li>
+                        <li>Kurichi,Sundarapuram,</li>
+                        <li>Coimbatore,Tamilnadu,641024.</li>
+                    </ul>
+                    <!-- <img src="{% static 'nsp.png'%}" alt="nsp" width="300px"> -->
+                </div>
+            
+            <div class="col-sm-3" style="float: left;">
+                <h6 class="headfont"><b>More information</b></h6>
+                <ul style="list-style-type: none;" class="navfont">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Service</li>
+                    <li>Gallary</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="col-sm-3" style="float: left;">
+                <h6 class="headfont">Navigation</h6>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1958.5046256588034!2d76.96956995575434!3d10.962673329824451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85a2e9e8dfdb3%3A0xe2bc66f7e4f3080e!2sNSP%20DECORS%26EVENTZ!5e0!3m2!1sen!2sin!4v1711965073601!5m2!1sen!2sin" 
+                width="300" height="160" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+           
+        </footer>
+        
+
+    
+</body>
+</html>
