@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: nsp-decoration
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn nsp_decoration.wsgi:application
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: NSP_Decoration.settings
+      - key: PYTHON_VERSION
+        value: 3.10
